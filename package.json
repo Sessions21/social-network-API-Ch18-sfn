@@ -1,0 +1,23 @@
+{
+  "name": "social-network-api-ch18-sfn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sessions21/social-network-API-Ch18-sfn.git"
+  },
+  "author": "Scott Nichols",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sessions21/social-network-API-Ch18-sfn/issues"
+  },
+  "homepage": "https://github.com/Sessions21/social-network-API-Ch18-sfn#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.4"
+  }
+}
