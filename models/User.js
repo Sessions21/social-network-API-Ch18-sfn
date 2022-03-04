@@ -3,22 +3,17 @@ const dateFormat = require('../utils/dateFormat');
 
 const UserSchema = new Schema(
   {
-    userName: {
+    username: {
       type: String,
       unique: true,
-      required: true,
+      required: 'Username is Required',
       trim: true
     },
     email: {
       type: String,
-      required: true,
+      required: 'Email is Required',
       unique: true,
       match: [/.+@.+\..+/]
-    },
-    createdAt: {
-      type: Date,
-      default: Date.now,
-      get: createdAtVal => dateFormat(createdAtVal)
     },
     thoughts: [
       {
@@ -38,7 +33,6 @@ const UserSchema = new Schema(
       virtuals: true,
       getters: true
     },
-    // prevents virtuals from creating duplicate of _id as `id`
     id: false
   }
 );
