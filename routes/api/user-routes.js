@@ -26,7 +26,7 @@ router
 // /api/users/:id/friends
 router
   .route('/:id/friends')
-  .post(addFriend)
+  .put(addFriend)
 
   // /api/users/:id/friends/:friendId
 router
