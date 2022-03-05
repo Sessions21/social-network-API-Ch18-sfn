@@ -2,7 +2,7 @@ const { Thought, User } = require('../models');
 
 const thoughtController = {
 
-    // get all thoughts
+  // get all thoughts
   getAllThoughts(req, res) {
     Thought.find({})
       .populate({
@@ -63,7 +63,7 @@ const thoughtController = {
     )
       .then(dbUserData => {
         if (!dbUserData) {
-          res.status(404).json({ message: 'No thought found with this id.' });
+          res.status(404).json({ message: 'No user found with this id.' });
           return;
         }
         res.json(dbUserData);
@@ -73,7 +73,7 @@ const thoughtController = {
 
    // update Thought by id
   updateThought({ params, body }, res) {
-    Thought.findOneAndUpdate({ _id: params.id }, body, { new: true })
+    Thought.findOneAndUpdate({ _id: params.id }, body, { new: true, runValidators: true })
       .then(dbThoughtData => {
         if (!dbThoughtData) {
           res.status(404).json({ message: 'No thought with this id.' });
