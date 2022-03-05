@@ -1,4 +1,5 @@
 const router = require('express').Router();
+
 const {
   getAllThoughts,
   getThoughtById,
@@ -23,7 +24,9 @@ router
   .delete(deleteThought);
 
 // /api/thoughts/<userId>
-router.route('/:userId').post(addThought);
+router
+  .route('/:userId')
+  .post(createThought);
 
 // /api/thoughts/<userId>/<thoughtId>
 router
@@ -32,6 +35,8 @@ router
   .delete(removeReaction);
 
 // /api/comments/<userId>/<thoughtId>/<reactionId>
-router.route('/:userId/:thoughtId/:reactionId').delete(removeReaction);
+router
+  .route('/:userId/:thoughtId/:reactionId')
+  .delete(removeReaction);
 
 module.exports = router;
