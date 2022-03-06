@@ -1,4 +1,5 @@
-# social-network-API-Ch18-sfn
+# Social Network-API-Ch18
+## Created by Scott Nichols
 
  ![License: 'MIT License'](https://img.shields.io/badge/License-MIT-blue)
  -------------------------------

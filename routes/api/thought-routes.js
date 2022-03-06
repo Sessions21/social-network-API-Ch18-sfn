@@ -32,9 +32,8 @@ router
 router
   .route('/:userId/:thoughtId')
   .put(addReaction)
-  .delete(removeReaction);
 
-// /api/comments/<userId>/<thoughtId>/<reactionId>
+// /api/thoughts/<userId>/<thoughtId>/<reactionId>
 router
   .route('/:userId/:thoughtId/:reactionId')
   .delete(removeReaction);
