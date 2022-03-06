@@ -28,7 +28,7 @@ router
   .post(addFriend)
 
 
-  // /api/users/:id/friends/:id
+  // /api/users/:userId/friends/:friendId
 router
 .route('/:userId/friends/:friendId')
 .delete(deleteFriend);

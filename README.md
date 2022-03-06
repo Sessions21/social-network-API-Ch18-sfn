@@ -42,6 +42,8 @@
 * Link to video walk through: 
 
 ### Example Insomnia GET, POST, PUT, and DELETE Screenshots:
-![ReadMe Output Example-1](./utils/images/ReadMe-Generator-Example-1.jpg)
-![ReadMe Output Example-2](./utils/images/ReadMe-Generator-Example-2.jpg)
+![Get All Users](./utils/images/Get-All_Users.jpg)
+![Get One User](./utils/images/Get-One_User.jpg)
+![Get All Thoughts](./utils/images/Get-All_Thoughts.jpg)
+![Get One Thought](./utils/images/Get-One_Thought.jpg)
 
