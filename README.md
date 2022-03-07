@@ -38,8 +38,8 @@
  ---------------------------------
 ### Questions
 * Github Profile: https://github.com/Sessions21/social-network-API-Ch18-sfn
+* Link to video walk through: https://www.awesomescreenshot.com/video/7752931?key=7f9aab91a0fb340ffcdd685b3393817b
 * Contact me with questions: s21nichols@hotmail.com
-* Link to video walk through: 
 
 ### Example Insomnia GET, POST, PUT, and DELETE Screenshots:
 ![Get All Users](./utils/images/Get-All_Users.jpg)
